@@ -1,0 +1,77 @@
+h1 {
+  position: relative;
+  top: 150px;
+  bottom: auto;
+  text-align: center;
+  color: white;
+  font-size: 3.5em;
+  margin-bottom: 0px; /* Adjusted margin to remove extra space */
+}
+
+p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: ivory;
+  margin: 250px -10px; /* Remove any extra space above and below */
+  padding-bottom: 0; /* Adjust padding */
+  max-width: 100%;
+}
+
+/* Apply general styles to the video element */
+video {
+  /* Set the size of the video */
+  width: auto;  /* Full width of its container */
+  height: auto; /* Maintain aspect ratio */
+
+  /* Optional: Set a maximum width or height if needed */
+  max-width: 100%; /* Restrict width to 100% of the container */
+  max-height: 100%; /* Restrict height to 100% of the container */
+
+  /* Optional: Set a border around the video */
+  border: 5px solid #000; /* Black border with 5px thickness */
+
+  /* Optional: Apply rounded corners to the video */
+  border-radius: 10px;
+
+  /* Optional: Add a shadow effect around the video */
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5); /* Shadow with slight blur */
+
+  /* Optional: Apply opacity for a slightly transparent effect */
+  opacity: 0.9; /* Set transparency (1 is fully opaque, 0 is fully transparent) */
+
+  /* Optional: Apply a background color in case the video is not loaded */
+  background-color: #000000; /* Dark background before video loads */
+}
+
+/* Hover effect (optional) */
+video:hover {
+  opacity: 1; /* Make it fully opaque when hovered */
+  transform: scale(1.05); /* Slightly zoom in when hovered */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for effects */
+}
+
+/* Center the video within a container */
+.video-container {
+  display: flex;
+  justify-content: flex-end; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Take up full viewport height */
+  background-color: #f0f0f0; /* Light background for contrast */
+}
+
+/* To remove buttons on a video*/
+video::-webkit-media-controls-panel {
+  display: none !important;
+  opacity: 1 !important;
+}
+
+.text-container {
+  width: 40%;  /* Set the width to 80% of the parent container */
+  height: 100px;  /* Set a fixed height */
+  background-color: rgb(0, 0, 0);  /* Just to make the container visible */
+  margin: 100px auto;  /* Centers the container horizontally */
+  border-radius: 10px;   /* Optional: Apply rounded corners to the video */
+  border: 5px solid #000; /* Black border with 5px thickness */
+  
+
+}
